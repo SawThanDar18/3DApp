@@ -106,7 +106,7 @@ class HomeFragment : Fragment() {
                                     position -> {
                                         description_txt.text = response.paymentVO[position].description
                                         phoneNumberList = paymentList[position].phone!!
-
+                                        
                                         currentString = phoneNumberList[i]
                                         separated = currentString.split(",".toRegex()).toTypedArray()
                                         val item = arrayOfNulls<String>(separated.size)
