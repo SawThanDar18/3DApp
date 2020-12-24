@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">3DApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Grace Myanmar</string>
+    <string name="nav_header_subtitle">09420857489</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Payment</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!--    error_msg-->
+    <string name="internet_connection_error_msg">No Internet Connection!</string>
+    <string name="error_msg">Unsuccessful!</string>
+    <string name="password_error">Wrong Password</string>
+    <string name="record_error">Please Register First</string>
+    <string name="status_error">Please contact to admin</string>
+    <string name="already_exit_error">Already Register!</string>
+    <string name="empty_data_error">Please fill all field!</string>
+
+    <!--    activity_splash-->
+    <string name="register_txt">Register</string>
+    <string name="login_txt">Login</string>
+    <string name="facebook_txt">Connect with Facebook</string>
+
+    <!--    activity_register-->
+    <string name="title">Hello Guy!</string>
+    <string name="name_hint">Name</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Enter new password</string>
+    <string name="paswword_txt">Enter your password</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="signup_txt">Sign Up</string>
+    <string name="already_txt">Already User</string>
+
+    <!--    activity_login-->
+    <string name="login_title">Welcome Back!</string>
+    <string name="forget_txt">Forget Password</string>
+    <string name="txt">Not have an account?</string>
+    <string name="reg_txt">Register</string>
+
+</resources>

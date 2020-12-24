@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/linear_layout_margin_top"
+    android:layout_marginStart="@dimen/margin"
+    android:layout_marginEnd="@dimen/margin"
+    android:layout_marginBottom="@dimen/margin">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/title"
+        android:textColor="@color/brown_"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/name_et_margin_top"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:gravity="center_vertical"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"
+        android:padding="@dimen/padding"
+        android:singleLine="true"
+        android:textColor="@color/brown_"
+        android:textColorHint="@color/brown"
+        android:textSize="@dimen/label_text_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/brown_" />
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_margin_top"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:gravity="center_vertical"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/padding"
+        android:singleLine="true"
+        android:textColor="@color/brown_"
+        android:textColorHint="@color/brown"
+        android:textSize="@dimen/label_text_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/brown_" />
+
+    <EditText
+        android:id="@+id/phone_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_margin_top"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:gravity="center_vertical"
+        android:hint="@string/phone_hint"
+        android:inputType="phone"
+        android:padding="@dimen/padding"
+        android:singleLine="true"
+        android:textColor="@color/brown_"
+        android:textColorHint="@color/brown"
+        android:textSize="@dimen/label_text_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/brown_" />
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_margin_top"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="@dimen/padding"
+        android:gravity="center_vertical"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:padding="@dimen/padding"
+        android:singleLine="true"
+        android:textColor="@color/brown_"
+        android:textColorHint="@color/brown"
+        android:textSize="@dimen/label_text_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/brown_" />
+
+    <Button
+        android:id="@+id/singup_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:background="@drawable/btn_shape"
+        android:text="@string/signup_txt"
+        android:textColor="@color/green"
+        android:textSize="@dimen/label_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/already_user_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_top"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/already_txt"
+        android:textColor="@color/brown_"
+        android:textSize="@dimen/label_text_size" />
+
+</LinearLayout>
