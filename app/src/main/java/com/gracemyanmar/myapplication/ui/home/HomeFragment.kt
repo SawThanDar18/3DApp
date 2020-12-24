@@ -13,7 +13,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
-import com.google.common.base.Splitter
 import com.gracemyanmar.myapplication.R
 import com.gracemyanmar.myapplication.adapters.CustomAdapter
 import com.gracemyanmar.myapplication.constant.SUCCESS_CODE
@@ -23,7 +22,6 @@ import com.gracemyanmar.myapplication.network.payment.PaymentVO
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-
 
 class HomeFragment : Fragment() {
 
@@ -106,7 +104,7 @@ class HomeFragment : Fragment() {
                                     position -> {
                                         description_txt.text = response.paymentVO[position].description
                                         phoneNumberList = paymentList[position].phone!!
-                                        
+
                                         currentString = phoneNumberList[i]
                                         separated = currentString.split(",".toRegex()).toTypedArray()
                                         val item = arrayOfNulls<String>(separated.size)
