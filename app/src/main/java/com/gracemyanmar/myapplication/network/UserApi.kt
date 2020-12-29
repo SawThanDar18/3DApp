@@ -1,6 +1,7 @@
 package com.gracemyanmar.myapplication.network
 
 import com.gracemyanmar.myapplication.constant.*
+import com.gracemyanmar.myapplication.network.balance.BalanceResponse
 import com.gracemyanmar.myapplication.network.login.LoginResponse
 import com.gracemyanmar.myapplication.network.login.LoginVO
 import com.gracemyanmar.myapplication.network.login.LoginVOResponse
@@ -21,7 +22,7 @@ interface UserApi {
 
     @Headers("ApiKey: $API_KEY")
     @POST(LOGIN_URL)
-    fun loginUsers(@Body loginVO: LoginVO?): Call<LoginResponse>
+    fun login(@Body loginVO: LoginVO?): Call<LoginVOResponse>
 
     @Headers("ApiKey: $API_KEY")
     @FormUrlEncoded
@@ -33,7 +34,14 @@ interface UserApi {
     fun addPayment() : Call<PaymentResponse>
 
     @Headers("ApiKey: $API_KEY")
-    @POST(LOGIN_URL)
-    fun login(@Body loginVO: LoginVO?): Call<LoginVOResponse>
+    @FormUrlEncoded
+    @POST(BALANCE_URL)
+    fun requestBalance(@Field("user_id") userId: Int, @Field("payment_id") paymentId: Int,
+                       @Field("text_id") textId: String, @Field("phone") phone: String): Call<BalanceResponse>
+
 
 }
+
+/*@Headers("ApiKey: $API_KEY")
+    @POST(LOGIN_URL)
+    fun loginUsers(@Body loginVO: LoginVO?): Call<LoginResponse>*/

@@ -19,7 +19,7 @@ import com.google.android.material.navigation.NavigationView
 import com.gracemyanmar.myapplication.R
 import com.gracemyanmar.myapplication.constant.TOOLBAR_BG
 import com.gracemyanmar.myapplication.constant.TOOLBAR_TXT
-
+import com.gracemyanmar.myapplication.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,9 +51,18 @@ class MainActivity : AppCompatActivity() {
         val hView = navigationView.getHeaderView(0)
         val username = hView.findViewById(R.id.username) as TextView
         val userPhone = hView.findViewById<TextView>(R.id.userPhone)
+        val id : Int
 
         username.text = intent.getStringExtra("name")
         userPhone.text = intent.getStringExtra("phone")
+        id = intent.getIntExtra("id", 0)
+
+        var bundle=Bundle()
+        bundle.putInt("id", id)
+        var fragment=HomeFragment()
+        fragment.arguments=bundle
+
+        //intent.putExtra("id", id)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

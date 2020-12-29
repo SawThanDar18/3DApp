@@ -11,7 +11,6 @@ import com.gracemyanmar.myapplication.R
 import com.gracemyanmar.myapplication.constant.PASSWORD_ERROR_CODE
 import com.gracemyanmar.myapplication.constant.RECORD_ERROR_CODE
 import com.gracemyanmar.myapplication.constant.STATUSBAR
-import com.gracemyanmar.myapplication.constant.SUCCESS_CODE
 import com.gracemyanmar.myapplication.network.DataImpl
 import com.gracemyanmar.myapplication.network.login.LoginVO
 import com.gracemyanmar.myapplication.network.login.LoginVOResponse
@@ -41,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
         window.statusBarColor = STATUSBAR.toColorInt()
         setContentView(R.layout.activity_login)
 
-        login_email_et = findViewById(R.id.login_email_et)
+        login_email_et = findViewById(R.id.text_id_et)
         login_password_et = findViewById(R.id.login_password_et)
         login_btn = findViewById(R.id.login_btn)
         register_txt = findViewById(R.id.register_txt)
@@ -74,6 +73,7 @@ class LoginActivity : AppCompatActivity() {
                     val intent = Intent(this@LoginActivity, MainActivity::class.java)
                     intent.putExtra("name", response.loginModel?.name)
                     intent.putExtra("phone", response.loginModel?.phone)
+                    intent.putExtra("id", response.loginModel?.id)
                     startActivity(intent)
                     finish()
                 } else if (response.statusCode == 200 && response != null || response.loginModel?.status == 0) {

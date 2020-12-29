@@ -4,20 +4,23 @@ import com.google.gson.annotations.SerializedName
 
 data class LoginModel(
 
-    @SerializedName("name")
-    var name: String? = null,
+        @SerializedName("id")
+        var id: Int? = null,
 
-    @SerializedName("email")
-    var email: String? = null,
+        @SerializedName("name")
+        var name: String? = null,
 
-    @SerializedName("phone")
-    var phone: String? = null,
+        @SerializedName("email")
+        var email: String? = null,
 
-    @SerializedName("status")
-    var status: Int? = null,
+        @SerializedName("phone")
+        var phone: String? = null,
 
-    @SerializedName("role")
-    var role: Int? = null,
+        @SerializedName("status")
+        var status: Int? = null,
 
-    var password: String? = null
+        @SerializedName("role")
+        var role: Int? = null,
+
+        var password: String? = null
 )
